@@ -10,23 +10,9 @@
 > properties using property accessors, independent of the type of underlying storage.
 > [Microsoft documents](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-state?view=azure-bot-service-4.0&tabs=csharp#prerequisites)
 
-## Struct
+## Strut
 
-
-
-```mermaid
-classDiagram
-    class StateManagementBot
-    class UserProfile
-    UserProfile: Name
-    class ConversationData
-    ConversationData: ChannelId
-    ConversationData: Timestamp
-    ConversationData: PromptedUserForName
-    
-    StateManagementBot --|> UserProfile
-    StateManagementBot --|> ConversationData
-```
+![class](./README/class.png)
 
 ## Goals
 
