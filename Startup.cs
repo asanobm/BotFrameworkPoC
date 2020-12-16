@@ -35,7 +35,8 @@ namespace BotFrameworkPoC
             
             // services.AddTransient<IBot, Bots.EchoBot>();
             // services.AddTransient<IBot, SendTypingIndicatorBot>();
-            services.AddTransient<IBot, AttachmentBot>();
+            // services.AddTransient<IBot, AttachmentBot>();
+            services.AddTransient<IBot, ButtonBot>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
