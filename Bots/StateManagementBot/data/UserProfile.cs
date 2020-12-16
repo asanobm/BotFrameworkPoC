@@ -1,4 +1,4 @@
-namespace BotFrameworkPoC.Bots.SaveUserAndConversationData
+namespace BotFrameworkPoC.Bots.StateManagementBot.data
 {
     /// <summary>
     /// User Profile class.
