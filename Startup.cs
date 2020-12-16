@@ -17,7 +17,7 @@ namespace BotFrameworkPoC
 {
     public class Startup
     {
-        private MemoryStorage _storage;
+        private readonly MemoryStorage _storage;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
