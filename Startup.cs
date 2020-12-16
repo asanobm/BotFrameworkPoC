@@ -3,6 +3,7 @@
 //
 // Generated with EchoBot .NET Template version v4.11.1
 
+using BotFrameworkPoC.Bots;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder;
@@ -31,7 +32,9 @@ namespace BotFrameworkPoC
             services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
 
             // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
-            services.AddTransient<IBot, BotFrameworkPoC.Bots.EchoBot>();
+            
+            // services.AddTransient<IBot, Bots.EchoBot>();
+            services.AddTransient<IBot, SendTypingIndicatorBot>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
